@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gerenteloja/configs/styles.dart';
+import 'package:gerenteloja/tabs/users_tab.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -7,7 +8,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
   PageController _pageController;
   int _page = 0;
 
@@ -22,9 +22,11 @@ class _HomeScreenState extends State<HomeScreen> {
     _pageController.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[500],
       bottomNavigationBar: Theme(
         data: Theme.of(context).copyWith(
             canvasColor: primaryColor,
@@ -34,8 +36,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 .copyWith(caption: TextStyle(color: Colors.white54))),
         child: BottomNavigationBar(
           currentIndex: _page,
-          onTap: (page){
-            _pageController.animateToPage(page, duration: Duration(microseconds: 500), curve: Curves.easeIn);
+          onTap: (page) {
+            _pageController.animateToPage(page,
+                duration: Duration(microseconds: 500), curve: Curves.easeIn);
           },
           items: [
             BottomNavigationBarItem(
@@ -47,18 +50,24 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      body: PageView(
-        controller: _pageController,
-        onPageChanged: (page){
-          setState(() {
-            _page = page;
-          });
-        },
-        children: <Widget>[
-          Container(color: Colors.red,),
-          Container(color: Colors.yellow,),
-          Container(color: Colors.green,),
-        ],
+      body: SafeArea(
+        child: PageView(
+          controller: _pageController,
+          onPageChanged: (page) {
+            setState(() {
+              _page = page;
+            });
+          },
+          children: <Widget>[
+            UsersTab(),
+            Container(
+              color: Colors.yellow,
+            ),
+            Container(
+              color: Colors.green,
+            ),
+          ],
+        ),
       ),
     );
   }
