@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "298218430878",
+    "firebase_url": "https://loja-virtual-cloud-nine.firebaseio.com",
+    "project_id": "loja-virtual-cloud-nine",
+    "storage_bucket": "loja-virtual-cloud-nine.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298218430878:android:0688b802c186eebcd8f68f",
+        "android_client_info": {
+          "package_name": "br.com.cloudnine.gerenteloja.gerenteloja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298218430878-rl7tkflfsa37bhrrr5chq7tlkk3fqlsq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDbuHIWWQinbCfcfbLJc37mwxAttaSRYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298218430878-rl7tkflfsa37bhrrr5chq7tlkk3fqlsq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "298218430878-ctsie5815b0ndf29245j37mige1kc0qn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.cloudnine.lojaVirtual"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298218430878:android:cc682e2ad28e6436",
+        "android_client_info": {
+          "package_name": "br.com.cloudnine.loja_virtual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298218430878-rl7tkflfsa37bhrrr5chq7tlkk3fqlsq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDbuHIWWQinbCfcfbLJc37mwxAttaSRYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298218430878-rl7tkflfsa37bhrrr5chq7tlkk3fqlsq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "298218430878-ctsie5815b0ndf29245j37mige1kc0qn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.cloudnine.lojaVirtual"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
